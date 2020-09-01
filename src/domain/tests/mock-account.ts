@@ -1,5 +1,5 @@
-import { AuthenticationParams } from 'domain/useCases/authentication'
-import { AccountModel } from 'domain/models/account-model'
+import { AuthenticationParams } from 'domain/useCases'
+import { AccountModel } from 'domain/models'
 
 import faker from 'faker'
 

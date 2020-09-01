@@ -1,13 +1,14 @@
 // import { RemoteAuthentication } from './remote-authentication'
 
-import { mockAuthentication, mockAccountModel } from 'domain/tests/mock-account'
-import { HttpPostClientSpy } from 'data/test/mock-http-client'
+import { mockAuthentication, mockAccountModel } from 'domain/tests'
+import { AccountModel } from 'domain/models'
+import { AuthenticationParams } from 'domain/useCases'
+
+import { HttpPostClientSpy } from 'data/test'
+import { HttpStatusCode } from 'data/protocols/http'
 import { RemoteAuthentication } from './remote-authentication'
 
 import { InvalidCredentialsError, UnexpectedError } from 'domain/errors'
-import { HttpStatusCode } from 'data/protocols/http/http-response'
-import { AuthenticationParams } from 'domain/useCases/authentication'
-import { AccountModel } from 'domain/models/account-model'
 
 import faker from 'faker'
 
